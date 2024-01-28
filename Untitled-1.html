@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="heart_13077283.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my lil muse</title>
+    <style>
+        /* Your existing CSS styles here */
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var passwordHint = "Your password hint goes here."; // Replace with your actual hint
+
+            if (password === "your-actual-password") { // Replace with your actual password
+                alert("Correct password! Welcome.");
+                // Add code to show your content or redirect to a secure page
+            } else {
+                alert("Incorrect password. Hint: " + passwordHint);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Your existing HTML content here -->
+
+    <!-- Password section -->
+    <div id="password-section" style="text-align: center; margin-top: 20px;">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
